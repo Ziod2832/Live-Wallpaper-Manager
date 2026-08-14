@@ -5,6 +5,13 @@ on:
   pull_request:
     types: [opened, synchronized]
 
+# Cấp quyền đọc/ghi rõ ràng cho GITHUB_TOKEN để tránh lỗi 403
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+  statuses: read
+
 jobs:
   claude:
     runs-on: ubuntu-latest
