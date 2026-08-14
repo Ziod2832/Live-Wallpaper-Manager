@@ -5,7 +5,6 @@ on:
   pull_request:
     types: [opened, synchronized]
 
-# Bổ sung khối quyền hạn này ở ngay dưới mục "on" để sửa triệt để lỗi 404
 permissions:
   contents: write
   pull-requests: write
@@ -19,6 +18,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
+      # ĐOẠN MÃ CỦA BẠN ĐƯỢC CHÈN CHUẨN XÁC TẠI ĐÂY:
       - name: Claude Code Action Official
         uses: anthropics/claude-code-action@v1
         with:
