@@ -5,7 +5,7 @@ on:
   pull_request:
     types: [opened, synchronized]
 
-# Cấp quyền đọc/ghi rõ ràng cho GITHUB_TOKEN để tránh lỗi 403
+# Bổ sung khối quyền hạn này ở ngay dưới mục "on" để sửa triệt để lỗi 404
 permissions:
   contents: write
   pull-requests: write
